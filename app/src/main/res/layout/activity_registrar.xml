@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.app.registrar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20sp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nuevo Alumno"
+                    android:textSize="50sp"
+                    android:layout_margin="10sp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15sp"
+                    android:layout_marginTop="30sp"
+                    android:columnCount="2"
+                    android:rowCount="5">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        app:srcCompat="@drawable/icononumero" />
+
+                    <EditText
+                        android:id="@+id/etRNoControl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:ems="10"
+                        android:hint="Número de control"
+                        android:inputType="number"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        app:srcCompat="@drawable/icononombre" />
+
+                    <EditText
+                        android:id="@+id/etRAlumno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:ems="10"
+                        android:hint="Nombre"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        app:srcCompat="@drawable/iconotelefono" />
+
+                    <EditText
+                        android:id="@+id/etRTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:ems="15"
+                        android:hint="Teléfono"
+                        android:inputType="phone"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        app:srcCompat="@drawable/icononombre" />
+
+                    <EditText
+                        android:id="@+id/etRUsuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:ems="10"
+                        android:hint="Usuario"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        app:srcCompat="@drawable/iconocontrasena" />
+
+                    <EditText
+                        android:id="@+id/etRContrasena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
+                        android:ems="10"
+                        android:hint="Contraseña"
+                        android:inputType="textPassword"
+                        android:textAlignment="center" />
+                </GridLayout>
+
+                <Button
+                    android:id="@+id/btnRegistro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_marginTop="15sp"
+                    android:background="#373A3C"
+                    android:onClick="registrar"
+                    android:text="Registrar"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/btnCancelar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="#1C61A2"
+                    android:onClick="cancelar"
+                    android:text="Cancelar"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

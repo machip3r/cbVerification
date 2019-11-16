@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.app.inicio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:text="Generación de código"
+                android:layout_marginTop="30sp"
+                android:textSize="50sp" />
+
+            <EditText
+                android:id="@+id/etNoControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_marginTop="15sp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="1">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30sp"
+                    app:srcCompat="@drawable/icononumero" />
+
+                <TextView
+                    android:id="@+id/tvCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20sp"
+                    android:layout_marginTop="30sp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="40sp" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/btnGenerar"
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20sp"
+                android:layout_marginTop="30sp"
+                android:background="#373A3C"
+                android:onClick="generar"
+                android:text="Generar còdigo"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
